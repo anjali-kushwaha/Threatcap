@@ -57,8 +57,6 @@ body {
     text-decoration: none;
 }
 
-
-/**/
 header .search-bar-container {
     position: absolute;
     top: 100%;
@@ -71,12 +69,12 @@ header .search-bar-container {
     align-items: center;
     z-index: 1001;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-  
+}
+
 header .search-bar-container.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
-  
+
 header .search-bar-container #search-bar {
     width: 100%;
     padding: 10px;
@@ -85,20 +83,17 @@ header .search-bar-container #search-bar {
     font-size: 18px;
     border-radius: 9px;
 }
-  
-  header .search-bar-container label {
+
+header .search-bar-container label {
     color: #fff;
     cursor: pointer;
     font-size: 18px;
     margin-left: 20px;
-  }
-  
-  header .search-bar-container label:hover {
-    color:  #055cff;
-  }  
+}
 
-
-/**/
+header .search-bar-container label:hover {
+    color: #055cff;
+}
 
 .banner {
     padding: 50px 0;
@@ -133,13 +128,13 @@ header .search-bar-container #search-bar {
     /* flex-direction: column; */
 }
 
-@media (max-width: 767px){
-    .countdown-container{ 
-        width: 500px;
-
+@media (max-width: 767px) {
+    .countdown-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
 }
-
 
 .countdown-item {
     text-align: center;
@@ -165,7 +160,7 @@ header .search-bar-container #search-bar {
     height: auto;
 }
 
-.register-btn{
+.register-btn {
     margin-top: 50px;
 }
 
@@ -173,9 +168,9 @@ header .search-bar-container #search-bar {
     font-size: 24px;
     color: #fff !important;
     padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: 4
 }
+
 
 .banner-btn:hover {
     background-color: rgb(49, 170, 49);
